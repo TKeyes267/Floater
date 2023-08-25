@@ -5,17 +5,28 @@
   justify-content: center;
   gap: 2rem;
 
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
+.homepageBackground {
+  background-color: var(--dark);
+  width: 100vw;
+}
 .image {
   width: 100%;
 }
 
 .intro {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: normal;
 
-  color: var(--dark);
+  color: var(--highlight);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }

@@ -1,20 +1,23 @@
-/* .leaflet_container {
-  width: 80vw;
-  height: 80vh;
-  padding: 10%;
-  margin: 2rem;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  padding: 2%;
 }
 
 .key_title {
-  font-size: 1.4rem;
+  font-size: 3rem;
+}
+
+.keyandsearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2%;
 }
 
 .key {
@@ -24,7 +27,7 @@
   justify-content: center;
 
   padding: 2rem;
-
+  border-radius: 0.5rem;
   border: var(--border);
 }
 
@@ -54,7 +57,7 @@
   padding: 2rem;
 
   border: var(--border);
-
+  border-radius: 0.5rem;
   background-color: var(--emphasis);
 }
 
@@ -90,4 +93,12 @@
   font-size: 1.4rem;
 
   border: var(--border);
+}
+
+.Map {
+  background-color: var(--dark);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
 }

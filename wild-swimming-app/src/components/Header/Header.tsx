@@ -17,13 +17,7 @@ const Header = () => {
     <div className="header">
       <div className="width-container">
         <div className="logo-hamburger-container">
-          <img
-            src={logo}
-            className="logo-img"
-            width="100px"
-            height="100px"
-            alt="wild swimming logo"
-          />
+          <h1 className="mainTitle">Floater</h1>
           <div
             className="hamburgericon"
             onClick={() => {
@@ -113,7 +107,6 @@ const Header = () => {
       )}
     </div>
   );
-  console.log(user);
 };
 
 export default Header;

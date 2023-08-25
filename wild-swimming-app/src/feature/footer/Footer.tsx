@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.innercontainer}>
         <p className={styles.slogan}>
-          Splash places<br></br> to swim
+          Floater places<br></br> to swim
         </p>
 
         <h4 className={styles.linkheading}>Link</h4>

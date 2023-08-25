@@ -4,8 +4,9 @@ import styles from "./ts-cs.module.css";
 const TsCs = () => {
   return (
     <div>
-      <section>
+      <section className={styles.tandc}>
         <h1>Terms and Conditions</h1>
+        <br></br>
         <p>
           In Scotland swimmers have a right to swim as part of their statutory
           right of responsible access to most land and inland water, in effect a
@@ -22,8 +23,11 @@ const TsCs = () => {
           responsibly are more important than ever, and need the support of
           swimmers.
         </p>
-        <h2>IN ENGLAND AND WALES:</h2>
+        <br></br>
+
         <ul className={styles.ul}>
+          <h2>IN ENGLAND AND WALES:</h2>
+          <br></br>
           <li>The right to swim in the sea is clear and not disputed.</li>
           <li>There is a right to swim in tidal waters.</li>
           <li>
@@ -89,6 +93,7 @@ const TsCs = () => {
           </li>
         </ul>
         <h2>RESPONSIBLE SWIMMING; BETTER ACCESS</h2>
+        <br></br>
         <p>
           In Scotland the rights to access waterways are based on the principle
           of responsible use, and this is what we want to see in England and
@@ -109,7 +114,6 @@ const TsCs = () => {
           work to do.
         </p>
       </section>
-
     </div>
   );
 };

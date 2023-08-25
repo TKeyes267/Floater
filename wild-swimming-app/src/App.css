@@ -1,20 +1,17 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@300;400;700&display=swap");
 body,
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "Manjari";
 }
 
 /* Leaflet */
 
-
 .leaflet-container {
-  padding: 10%;
+  padding: 12rem;
   margin: 20px;
   width: 80vw;
   height: 80vh;
 }
-
 
 .leaflet-popup-content-wrapper .leaflet-popup-content {
   height: auto;
@@ -29,4 +26,3 @@ html {
   justify-content: center;
   gap: 1rem;
 }
-

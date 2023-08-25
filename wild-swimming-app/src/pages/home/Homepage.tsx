@@ -12,9 +12,9 @@ const Homepage = () => {
     <>
       <Herosection />
       <section className={styles.homepage}>
-        <section>
+        <section className={styles.homepageBackground}>
           <h5 className={styles.intro}>
-            Splash provides a space within which a community of swimmers can
+            Floater provides a space within which a community of swimmers can
             share the joy and adventure of swimming outdoors. Find a wild
             swimming spot in the Uk - our map uses data from the Environmental
             agency to enable you to check out how clean the water is in your
@@ -22,7 +22,6 @@ const Homepage = () => {
             location.
           </h5>
         </section>
-
         <Map />
       </section>
     </>

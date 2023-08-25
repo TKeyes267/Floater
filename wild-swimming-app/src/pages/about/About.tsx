@@ -3,10 +3,11 @@ import styles from "./about.module.css";
 const About = () => {
   return (
     <div>
-      <section>
-        <h1 className={styles.title}>Welcome to Splash!</h1>
+      <section className={styles.text}>
+        <h1 className={styles.title}>Welcome to Floater!</h1>
+        <br></br>
         <section>
-          At Splash, <span className={styles.bold}>our mission</span> is to
+          At Floater, <span className={styles.bold}>our mission</span> is to
           provide you with accurate and up-to-date information about the finest
           bathing water spots in England.
         </section>
@@ -57,7 +58,7 @@ const About = () => {
         </section>
         <br />
         <section>
-          Thank you for visiting Splash! We hope you find our website
+          Thank you for visiting Floater! We hope you find our website
           informative and helpful in discovering the best bathing waters in
           England.
         </section>

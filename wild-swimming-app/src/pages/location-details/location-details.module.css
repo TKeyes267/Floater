@@ -55,7 +55,7 @@
 details {
   background-color: var(--mid);
   color: var(--highlight);
-  filter: drop-shadow(7px 6px 0px var(--alternate));
+  padding: 3rem;
 }
 
 p {

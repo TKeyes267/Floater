@@ -164,9 +164,7 @@ const Map = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
 
-    console.log(postcode);
     checkValidPostocde(postcode).then((result) => {
-      console.log(result);
       if (!result) {
         setErr(true);
         setMessage("Postcode can not be found, Please enter a valid Postcode");
@@ -209,55 +207,58 @@ const Map = () => {
             properties and streets.
           </p>
         </details>
+        <div className={styles.keyandsearch}>
+          <div className={styles.key}>
+            <h6 className={styles.key_title}>Key: </h6>
+            <div className={styles.key_divs}>
+              <img
+                src="https://img.icons8.com/?size=512&id=3790&format=png"
+                alt="map icon"
+                className={styles.key_icons}
+              />
+              <p>You Are Here</p>
+            </div>
+            <div className={styles.key_divs}>
+              <img
+                src="https://img.icons8.com/?size=512&id=86830&format=png"
+                alt="map icon"
+                className={styles.key_icons}
+              />
+              <p>Storm Overflow Data</p>
+            </div>
+            <div className={styles.key_divs}>
+              <img
+                src="https://img.icons8.com/?size=512&id=3781&format=png"
+                alt="map icon"
+                className={styles.key_icons}
+              />
+              <p> Bathing Water Locations</p>
+            </div>
+          </div>
+          <form onSubmit={handleSubmit} className={styles.postcode_form}>
+            <label htmlFor="postcode">Search by postcode</label>
 
-        <div className={styles.key}>
-          <h6 className={styles.key_title}>Key: </h6>
-          <div className={styles.key_divs}>
-            <img
-              src="https://img.icons8.com/?size=512&id=3790&format=png"
-              alt="map icon"
-              className={styles.key_icons}
+            <input
+              name="postcode"
+              type="text"
+              required
+              value={postcode}
+              onChange={(event) => setPostcodeList(event.target.value)}
+              className={styles.postcode_search}
             />
-            <p>You Are Here</p>
-          </div>
-          <div className={styles.key_divs}>
-            <img
-              src="https://img.icons8.com/?size=512&id=86830&format=png"
-              alt="map icon"
-              className={styles.key_icons}
-            />
-            <p>Storm Overflow Data</p>
-          </div>
-          <div className={styles.key_divs}>
-            <img
-              src="https://img.icons8.com/?size=512&id=3781&format=png"
-              alt="map icon"
-              className={styles.key_icons}
-            />
-            <p> Bathing Water Locations</p>
-          </div>
+
+            <button className={styles.postcode_button} type="submit">
+              Search
+            </button>
+
+            {err ? <p>{message}</p> : null}
+          </form>
         </div>
-        <form onSubmit={handleSubmit} className={styles.postcode_form}>
-          <label htmlFor="postcode">Search by postcode</label>
-
-          <input
-            name="postcode"
-            type="text"
-            required
-            value={postcode}
-            onChange={(event) => setPostcodeList(event.target.value)}
-            className={styles.postcode_search}
-          />
-
-          <button className={styles.postcode_button} type="submit">
-            Search
-          </button>
-
-          {err ? <p>{message}</p> : null}
-        </form>
         <button onClick={showMyLocation} className={styles.findme_button}>
           Find my Location
         </button>
+      </section>
+      <div className={styles.Map}>
         <MapContainer
           center={center}
           zoom={ZOOM_LEVEL}
@@ -359,11 +360,10 @@ const Map = () => {
             ]}
           ></Marker>
         </MapContainer>
-        <div></div>
-      </section>
-
+      </div>
       <div></div>
 
+      <div></div>
     </>
   );
 };
